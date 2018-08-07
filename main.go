@@ -129,7 +129,7 @@ func (pow *ProofOfWork) Run() (int, []byte) {
 	return nonce, hash[:]
 }
 
-// Validate is a function of validate block mining result
+//Validate is a function of validate block mining result
 func (pow *ProofOfWork) Validate() bool {
 	var hashInt big.Int
 
