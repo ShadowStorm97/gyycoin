@@ -146,6 +146,7 @@ func main() {
  	bc.AddBlock("Send 10 GYC to ZXY")
 	bc.AddBlock("send 20 GYC to GYY")
 
+
 	for _, block := range bc.blocks {
 		fmt.Printf("Prev. hash: %x\n", block.PrevBlockHash)
 		fmt.Printf("Data: %s\n", block.Data)
