@@ -141,10 +141,12 @@ func (pow *ProofOfWork) Validate() bool {
 }
 
 func main() {
-	bc := NewBlockChain()
+	//bc := NewBlockChain()
 
-	bc.AddBlock("Send 1 GYC to ZXY")
-	bc.AddBlock("send 2 GYC to GYY")
+	//bc.AddBlock("Send 1 GYC to ZXY")
+	//bc.AddBlock("send 2 GYC to GYY")
+	
+	//这是别人新加的代码 我没写过
 
 	for _, block := range bc.blocks {
 		fmt.Printf("Prev. hash: %x\n", block.PrevBlockHash)
